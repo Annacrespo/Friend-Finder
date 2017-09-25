@@ -1,4 +1,4 @@
-[
+var friendsData = [
     {
     "name":"Alice",
     "photo":"http://static.tvtropes.org/pmwiki/pub/images/alice1_large.jpg",
@@ -80,3 +80,4 @@
       ]
   }
 ]
+module.exports=friendsData;
