@@ -3,7 +3,6 @@ var friendsData = require("../data/friends.js");
 console.log(friendsData);
 module.exports = function (app) {
     app.get("/api/friends", function (req, res) {
-        console.log('retrieving freinds!');
         res.json(friendsData);
     });
     app.post('/api/friends', function (req, res) {
@@ -23,3 +22,4 @@ module.exports = function (app) {
         res.json(_.sortBy(compareScores, "score").shift());
     });
   };
+  
